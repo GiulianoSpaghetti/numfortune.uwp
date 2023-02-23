@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="numfortune.uwp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:numfortune.uwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBox x:Name="cookie" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false"/>
+        <Button Content="Get new Cookie" HorizontalAlignment="Center" VerticalAlignment="Center" Click="OnTick_Click"/>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >ⓒ Giulio Sorrentino 2023 some right reserved</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >Version 1.0</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >This app wants to be the replacement of the unfortunated app fitfortune for fitbit</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >A simple fortune's linux clone for XBox</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >https://github.com/numerunix/numfortune.uwp</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >Special thanks to Francesca Milano</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >This app is under GPL v3 or, in your humble opinion, any later version</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >https://github.com/numerunix/numfortune.uwp</TextBlock>
+    </StackPanel>
+</Page>
