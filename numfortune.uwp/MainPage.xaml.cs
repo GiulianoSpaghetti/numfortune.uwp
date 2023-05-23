@@ -28,6 +28,7 @@ namespace numfortune.uwp
         HttpClient client;
         public MainPage()
         {
+            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "en-US";
             this.InitializeComponent();
             client = new HttpClient();
             tick();
