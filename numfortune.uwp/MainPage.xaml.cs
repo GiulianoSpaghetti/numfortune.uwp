@@ -6,6 +6,8 @@ using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System.Profile.SystemManufacturers;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -13,6 +15,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Web.Http;
+using HttpClient = Windows.Web.Http.HttpClient;
+using HttpResponseMessage = Windows.Web.Http.HttpResponseMessage;
 
 // Il modello di elemento Pagina vuota è documentato all'indirizzo https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x410
 
@@ -28,17 +33,29 @@ namespace numfortune.uwp
         HttpClient client;
         public MainPage()
         {
+            MessageDialog d;
             Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "en-US";
             this.InitializeComponent();
             client = new HttpClient();
+          /*  if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
+            {
+                d = new MessageDialog("Unsupported platform");
+                d.Commands.Add(new UICommand("Exit", new UICommandInvokedHandler(exit)));
+                IAsyncOperation<IUICommand> asyncOperation = d.ShowAsync();
+            }*/
             tick();
+        }
+
+        private void exit(IUICommand command)
+        {
+            Application.Current.Exit();
         }
 
         private async void tick()
         {
             try
             {
-                httpResponse = await client.GetAsync("https://api.justyy.workers.dev/api/fortune");
+                httpResponse = await client.GetAsync(new Uri("https://api.justyy.workers.dev/api/fortune"));
             }
             catch (Exception ex)
             {
