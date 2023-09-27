@@ -1,5 +1,5 @@
 # numfortune.uwp
-A linux's fortune clone in UWP for xbox
+A fortune teller in UWP for xbox
 
 # Get it now
 
@@ -16,9 +16,10 @@ Pay the 17 euros, it is not clear whether a lotum or per year, and wait for the 
 First record your Developer account in the appropriate section at the top right, then click on "Show Visual Studio Pin" and save it, now go to the PC, open the project, click on remote device instead of on the local computer when you have to Fill out, indicate the Xbox IP, wait for the pin to ask you, insert it and fill out.
 
 Soon in the central lower section the numerone's fortune will appear, just start it to be able to play.
-# Donazioni
 
-[![paypal](https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H4ZHTFRCETWXG)
+# Donations
+
+[![paypal](https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JZVR4QQFGLR6Q)
 
 You can also donate through Hype card as long as you have my mobile number in the address book. Do you know where you can find it? On my curriculum.
 Open the Hype app, log in, select payments, send money, select my number in the address book, set the amount, enter the reason and follow the instructions on the video.
