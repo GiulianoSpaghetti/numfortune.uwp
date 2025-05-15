@@ -1,9 +1,13 @@
+## ATTENZIONE
+
+Il progetto così come è funziona, solo che venite invitati a ricompilarlo su pc impostando il debug sulla prima linea del main, scoprendo come si chiama la variabile di sistema che contiene la mainwindow ed a impostarla a NULL.
+
+Il progetto viene dichiarato legacy, per il momento.
+Su windows c'è il numfortune maui, mentre su xbox al momento non c'è soluzione, ma ci stanno lavorando.
+
+
 # numfortune.uwp
 A fortune teller in UWP for xbox
-
-# Get it now
-
-[![microsoft](https://get.microsoft.com/images/en-us%20dark.svg)](https://www.microsoft.com/store/apps/9PJ40NF6SWFL)
 
 # The old fashion compiled way
 
