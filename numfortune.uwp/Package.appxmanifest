@@ -9,7 +9,7 @@
   <Identity
     Name="21961GiulioSorrentino.numeronesfortune"
     Publisher="CN=943AD59F-3DA9-4CFA-998C-F0F7FC0A251B"
-    Version="1.0.0.0" />
+    Version="1.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="3da55a6f-29b5-49c0-b2a0-817cc33bbad0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

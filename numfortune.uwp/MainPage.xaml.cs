@@ -29,15 +29,16 @@ namespace numfortune.uwp
     public sealed partial class MainPage : Page
     {
 
-        HttpResponseMessage httpResponse;
-        HttpClient client;
+        private HttpResponseMessage httpResponse;
+        private HttpClient client;
+        private readonly Uri uri = new Uri("https://helloacm.com/api/fortune/");
         public MainPage()
         {
             MessageDialog d;
             Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = "en-US";
             this.InitializeComponent();
             client = new HttpClient();
-            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
+            if (!SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Surface") && !SystemSupportInfo.LocalDeviceInfo.SystemProductName.Contains("Xbox"))
             {
                 d = new MessageDialog("Unsupported platform");
                 d.Commands.Add(new UICommand("Exit", new UICommandInvokedHandler(exit)));
@@ -55,7 +56,7 @@ namespace numfortune.uwp
         {
             try
             {
-                httpResponse = await client.GetAsync(new Uri("https://api.justyy.workers.dev/api/fortune"));
+                httpResponse = await client.GetAsync(uri);
             }
             catch (Exception ex)
             {

@@ -11,11 +11,11 @@
     <StackPanel>
         <TextBox x:Name="cookie" TextWrapping="Wrap" AcceptsReturn="true" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false"/>
         <Button Content="Get new Cookie" HorizontalAlignment="Center" VerticalAlignment="Center" Click="OnTick_Click"/>
-        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >ⓒ Giulio Sorrentino 2023 some right reserved</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >ⓒ Giulio Sorrentino 2023-2025 some right reserved</TextBlock>
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >Version 1.0</TextBlock>
-        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >This app wants to be the replacement of the unfortunated app fitfortune for fitbit</TextBlock>
-        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >A simple fortune's linux clone for XBox</TextBlock>
-        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >https://github.com/numerunix/numfortune.uwp</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >This app wants to be the replacement of the app fitfortune for fitbit</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >A simple fortune's linux clone for XBox and Surface</TextBlock>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >https://github.com/GiulianoSpaghetti/numfortune.uwp</TextBlock>
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >Special thanks to Francesca Milano</TextBlock>
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >This app is under GPL v3 or, in your humble opinion, any later version</TextBlock>
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" >https://github.com/numerunix/numfortune.uwp</TextBlock>
